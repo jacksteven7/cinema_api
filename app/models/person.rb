@@ -5,4 +5,9 @@ class Person < ApplicationRecord
   has_many :movies_as_actors, through: :actors, source: :movie
   has_many :movies_as_directors, through: :directors, source: :movie
   has_many :movies_as_producers, through: :producers, source: :movie
+
+
+  def name
+    self.first_name + " " + self.last_name
+  end
 end

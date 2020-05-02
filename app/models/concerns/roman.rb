@@ -1,15 +1,17 @@
-class ApplicationController < ActionController::Base
-  DIGITS = {
+module Roman
+  extend ActiveSupport::Concern
+
+  @digits = {
     1000 => "M",
      900 => "CM", 500 => "D", 400 => "CD",  100 => "C",
       90 => "XC",  50 => "L",  40 => "XL",   10 => "X",
        9 => "IX",   5 => "V",   4 => "IV",    1 => "I"
   }
   
-  def romanize(num)
-    DIGITS.keys.each_with_object('') do |key, str|
+  def self.romanize(num)
+    @digits.keys.each_with_object('') do |key, str|
       nbr, num = num.divmod(key)
-      str << DIGITS[key]*nbr
+      str << @digits[key]*nbr
     end
   end
 end
