@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  protect_from_forgery with: :null_session
+  
   DIGITS = {
     1000 => "M",
      900 => "CM", 500 => "D", 400 => "CD",  100 => "C",
