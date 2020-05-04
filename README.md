@@ -28,7 +28,13 @@
 
 * You can import the next postman collection in order to test all the avaliable endpoints to test the functionality
 
+* Postman collection for local environment 
+
 https://www.getpostman.com/collections/95b1f7114a2ae30d3347
+
+* Postman collection for heroku environment 
+
+https://www.getpostman.com/collections/f6f46c6ca640f1c6bd38
 
 ### Endpoints
 
