@@ -30,7 +30,7 @@
 
 * Postman collection for local environment 
 
-https://www.getpostman.com/collections/95b1f7114a2ae30d3347
+https://www.getpostman.com/collections/7e243943a8dcf2f7daf7
 
 * Postman collection for heroku environment 
 
